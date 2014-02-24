@@ -1,0 +1,143 @@
+/* 
+LawrenceSamantha.com 
+all right reserved - email@lawrencesamantha.com
+*/
+
+/* reset */
+p {
+	line-height:1.2em;
+}
+
+/* general */
+body {	
+	color: #F2F2F2;
+	background-color: #46788C;
+	font-family: 'Droid Sans', arial, serif; 
+}
+#background {
+	padding-top:150px;
+}
+#background-inner{
+	background-color: #C7D2D9;
+}
+#container {
+	background-color: #C7D2D9;
+}
+#container-inner {
+	background-color: #46788C;
+	padding-top: 40px; 
+	padding-bottom: 20px; 
+}
+
+.rounded-img {
+	display: inline-block;
+	border: solid 1px #000;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+/* top-left tile */
+
+#logo {
+	background-color: #99151F;
+	height: 120px;
+	-moz-border-radius-topleft: 30px;
+	-khtml-border-top-left-radius: 30px;
+	-webkit-border-top-left-radius: 30px;
+	position: relative;
+}
+
+#name {
+	padding-right: 10px;
+	text-align: right;
+	font-size: 1.2em;
+	font-weight:bold;
+	position: absolute;
+	bottom:10px;
+	color: #F2F2F2;
+}
+span.name {
+	font-weight:normal;
+}
+
+/* top-right tile */
+
+#content {
+	background-color: #F2F2F2;
+	-moz-border-radius-topright: 30px;
+	-khtml-border-top-right-radius: 30px;
+	-webkit-border-top-right-radius: 30px;
+	height: 120px;
+	color: #46788C;
+	position: relative;
+	margin-left:-20px;
+}
+
+#content-in{
+	text-align: left;
+	position: absolute;
+	bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* middle-left tile */
+.middle {
+	background-color: #F2F2F2;
+}
+
+/* bottom-left tile */
+
+#about {
+	background-color: #D8D561;
+	-moz-border-radius-bottomleft: 30px;
+	-khtml-border-bottom-left-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;	
+	height: 80px;
+	color: #46788C;	
+	position: relative;	
+}
+
+#job {	
+	color: #F2F2F2;
+	text-align: right;
+	font-size: 1.2em;
+	font-weight:bold;	
+	padding-top: 10px;
+	padding-right: 10px;		
+	font-weight:bold;
+}
+span.job {
+	font-weight:normal;
+}
+
+/* bottom-right tile */
+
+#footer {
+	background-color: #F2F2F2;
+	-moz-border-radius-bottomright: 30px;
+	-khtml-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	height: 80px;
+	color: #46788C;
+	position: relative;	
+	margin-left:-20px;
+}
+
+#footer-in{
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+/* future use */
+.shadow {
+        -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+        -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}

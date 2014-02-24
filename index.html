@@ -1,33 +1,81 @@
 <!doctype html>
 <html>
 <head>
-        <title>lawrence samantha</title>
-	<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<link href=' http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
-	<link href="style.css" rel="stylesheet" type="text/css" /> 
+	<meta name="description" content="Lawrence Samantha personal website" />
+	<meta name="keywords" content="Lawrence,Samantha,Java,Oracle,Android,LAMP,HTML,CSS,XML,JavaScript,Ohio,Columbus" />
+	<meta name="author" content="Lawrence Samantha" />
+	<meta charset=UTF-8>
+	<title>Lawrence Samantha</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" /> 
+	<link href="css/960.css" rel="stylesheet" type="text/css" /> 
+	<link href="css/mine.css" rel="stylesheet" type="text/css" /> 
+	<link href="css/text.css" rel="stylesheet" type="text/css" /> 
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $(".rounded-img, .rounded-img2").load(function() {
+		$(this).wrap(function(){
+		  return '<span class="' + $(this).attr('class') + '" style="background:url(' + $(this).attr('src') + ') no-repeat center center; width: ' + $(this).width() + 'px; height: ' + $(this).height() + 'px;" />';
+		});
+		$(this).css("opacity","0");
+	  });
+
+	});
+	</script>
 </head>
 <body>
-	<div id="container">
-		<div class="menu">
-			<ul>
-				<li class="l1"><a href="http://www.olentz.net">Blog</a></li>
-				<li class="l2"><a href="http://www.olentz.net/blog/resume">Resume</a></li>
-			</ul>
-		</div>
-		<div class="bubble">
-			<div class="rectangle"><h2>lawrence samantha</h2></div>
-			<div class="triangle-l"></div>
-			<div class="triangle-r"></div>
-			<div class="info">
-				<h2>software engineer</h2>
-				<p>email at lawrencesamantha dot com</p>
+<div id="background">
+	<div id="background-inner" class="container_12">	
+		<div id="container">
+			<div id="container-inner" class="container_12">
+				<div class="grid_2 prefix_2">
+					<div id="logo">
+						<div id="name">Lawrence <span class="name">Samantha</span></div>
+					</div>
+				</div>
+				<div class="grid_5">
+					<div id="content">
+						<div id="content-in">
+							I'm US based software engineer, specializing on Java, Android, LAMP web development while trying to change the world through <a href="http://eEvent.com">one mean</a> or <a href="http://olentz.net">another</a>. 
+							I'm highly stalkable, just reach me through <a href="mailto:email@lawrencesamantha.com">email</a>. 
+						</div>
+					</div>
+				</div>
+				<!-- Middle 
+				<div class="clear"><p></p></div>
+				<div class="grid_2 prefix_2">
+					<div class="middle">dsad</div>
+				</div>
+				<div class="grid_5">
+					<div class="middle">dsad</div>
+				</div>
+				-->
+				<!-- Bottom -->
+				<div class="clear"><p></p></div>
+				<div class="grid_2 prefix_2">
+					<div id="about">
+						<div id="job">Software<br/><span class="job">Engineer</span></div>
+					</div>
+				</div>
+				<div class="grid_5">
+					<div id="footer">
+						<div id="footer-in">
+							<a href="http://about.me/lawrencegs"><img width="64" height="64" src="img/aboutme.png" /></a>
+							<a href="http://resume.linkedinlabs.com/efpprpph"><img width="64" height="64" src="img/linkedin.png" /></a>
+							<a href="http://twitter.com/lawrencegs"><img width="64" height="64" src="img/twitter.png" /></a>	
+							<a href="http://www.facebook.com/lawrencegs"><img width="64" height="64" src="img/facebook.png" /></a>
+							<a href="http://www.flickr.com/photos/lawrencegs/"><img width="64" height="64" src="img/flickr.png" /></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
 			</div>
 		</div>
-		<div class="footer">
-			Lawrence Samantha &copy; 2010
-		</div>
 	</div>
-	
+</div>
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -37,6 +85,7 @@ try {
 var pageTracker = _gat._getTracker("UA-253403-8");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+
 </body>
 
 </html>
