@@ -53,4 +53,5 @@ div.bar {
   background: url("bar.png") no-repeat right;
   background-color: #f6881f;
   height: 50px;
+  border-bottom:1px solid #fff;
 }
