@@ -1,187 +1,56 @@
-/* Reset */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, font, img, ul, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-:focus {
-	outline: 0;
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
-/* // Reset */
 
 body {
-	background: url(bck.jpg); /* image for body made with Photoshop using noise filter (gaussian monochromatic) on #ccc */
-	font-family: 'Droid Serif', arial, serif; 
-	/*font-family: Georgia, Verdana, .Lucida Sans Unicode., sans-serif; */
-	font-size: 12px;
-	color: #999;
+  font-family:  "Helvetica Neue", HelveticaNeue, 'Lato', sans-serif;
+  background-color: #ff6600;
+  color: #fff;
+  text-align: center;
+  line-height: 1.125em;
+  letter-spacing: 0.0625em;
 }
-
+h1,h2,h3 {margin-bottom:0.875em; margin-top:0.375em;}
+h1 {
+  font-size:2em;
+  font-weight:900;
+}
+h1 span.light {
+  font-weight:400;
+}
 h2 {
-	font-style: italic;
-	font-weight: normal;
-	line-height: 1.2em;
+  font-size:1.5em;
+  font-weight:100;
+}
+h3 {
+  font-size:1em;
+  font-weight:100;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #000;
 }
 
-div#container {
-	margin: 50px auto 0px auto; /* centered */
-	width: 400px;
+div.container{
+  padding: 1em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 200px;
 }
 
-.menu {
-	position: relative;
-	top:3px;
-	left: 50px;
-	z-index: 80; /* the stack order: displayed under bubble (90) */
-}
-
-.menu ul li {
-	-webkit-transform: rotate(-45deg); /* rotate the list item */
-	-moz-transform: rotate(-45deg); /* rotate the list item */
-	width: 50px;
-	overflow: hidden;	
-	margin: 10px 0px;
-	padding: 5px 5px 5px 18px;
-	float: left;
-	background: #7f9db9;
-	text-align: right;
-}
-
-.menu ul li a {
-	color: #fff;
-	text-decoration: none;
-	display:block;
-}
-
-.menu ul li.l1 {
-	background: rgba(131,178,51,0.65);
-}
-
-.menu ul li.l1:hover {
-	background: rgb(131,178,51);
-}
-
-.menu ul li.l2 {
-	background: rgba(196,89,30,0.65);
-}
-
-.menu ul li.l2:hover {
-	background: rgb(196,89,30);
-}
-
-.menu ul li.l3 {
-	background: rgba(65,117,160,0.65);
-}
-
-.menu ul li.l3:hover {
-	background: rgb(65,117,160);
-}
-
-.menu span {
-	margin: 15px 80px 0px 0px;
-	float:right;
-}
-
-.footer {
-	clear:both;
-	width: 350px;
-	margin: 15px auto;
-	text-align: center;
-	position: relative;
-}
-
-.bubble {
-	clear: both;
-	margin: 0px auto;
-	width: 350px;
-	background: #fff;
-	-moz-border-radius: 10px;
-  -khtml-border-radius: 10px;
-  -webkit-border-radius: 10px;
-	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-  -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);	
-	position: relative; 
-	z-index: 90; /* the stack order: displayed under ribbon rectangle (100) */
-}
-
-.rectangle {
-	background: #7f9db9;
-	height: 50px;
-	width: 380px;
-	position: relative;
-	left:-15px;
-	top: 30px;
-	float: left;
-	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-	z-index: 100; /* the stack order: foreground */
-}
-
-.rectangle h2 {
-	font-size: 30px;
-	color: #fff;
-	padding-top: 6px;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-	text-align: center;
-}
-
-.triangle-l {
-	border-color: transparent #7d90a3 transparent transparent;
-	border-style:solid;
-	border-width:15px;
-	height:0px;
-	width:0px;
-	position: relative;
-	left: -30px;
-	top: 65px;
-	z-index: -1; /* displayed under bubble */
-}
-
-.triangle-r {
-	border-color: transparent transparent transparent #7d90a3;
-	border-style:solid;
-	border-width:15px;
-	height:0px;
-	width:0px;
-	position: relative;
-	left: 350px;
-	top: 35px;
-	z-index: -1; /* displayed under bubble */
-}
-
-.info {
-	padding: 60px 25px 35px 25px;
-}
-
-.info h2 {
-	font-size: 20px;
-}
-
-.info p {
-	padding-top: 10px;
-	font-size: 14px;
-	line-height: 22px;
-}
-
-.info p a {
-	color: #c4591e;
-	text-decoration: none;
-}
-
-.info p a:hover {
-	text-decoration: underline;
+div.bar {
+  background: url("bar.png") no-repeat right;
+  background-color: #f6881f;
+  height: 50px;
 }
