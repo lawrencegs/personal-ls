@@ -15,14 +15,14 @@ body {
 }
 h1,h2,h3 {margin-bottom:0.875em; margin-top:0.375em;}
 h1 {
-  font-size:2em;
+  font-size:1.6em;
   font-weight:900;
 }
 h1 span.light {
   font-weight:400;
 }
 h2 {
-  font-size:1.5em;
+  font-size:1.3em;
   font-weight:100;
 }
 h3 {
@@ -45,7 +45,6 @@ div.container{
   right: 0;
   bottom: 0;
   left: 0;
-  width: 320px;
   height: 200px;
 }
 
